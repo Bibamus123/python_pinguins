@@ -137,7 +137,9 @@ while number_of_levels != 0 and player_HP > 1:
                       f'\nYou have no mana! You will get 10 mana instead of '
                       f'25 '
                       'for mistake!')
-                player_mana += 10
+                #Проверка на восстановление маны после неудачной попытки атаки
+                if player_mana + 10 <= player_max_mana:
+                    player_mana += 10
 
         #Восстановление маны игрока
         if player_action == 2:
