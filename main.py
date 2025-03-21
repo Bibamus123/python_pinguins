@@ -106,7 +106,7 @@ while number_of_levels != 0 and player_HP > 1:
 
     #Проверка на класс бронированного
     if player_class == 3:
-        enemy -= 10
+        enemy_damage -= 10
     mana_per_attack = enemy.get('mana_per_attack')
     enemy_mana_reload = enemy.get('enemy_mana_reload')
 
